@@ -6,4 +6,4 @@ functions:
   idoim-follow:
     lang: python3
     handler: ./idoim-follow
-    image: idoim-follow:latest
+    image: kids937/idoim-follow:latest

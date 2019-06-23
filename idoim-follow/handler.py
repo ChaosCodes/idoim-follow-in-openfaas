@@ -5,6 +5,8 @@ def handle(req):
     with open('./idioms_dict.json', 'r') as f:
         words = json.load(f)
     try:
+        print(f'req{req}')
+        return req
         if w not in words[w[0]]:
             return 'the idiom not exist'
         next_words = words.get(w[-1], [])

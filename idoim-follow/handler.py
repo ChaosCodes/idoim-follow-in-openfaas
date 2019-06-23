@@ -10,7 +10,7 @@ def handle(req):
         next_words = words.get(w[-1], [])
         length = len(next_words)
         if length == 0:
-            return "can't find the next idion")
+            return "can't find the next idion"
         word = next_words[random.randint(0, length - 1)]
         return word
     except:

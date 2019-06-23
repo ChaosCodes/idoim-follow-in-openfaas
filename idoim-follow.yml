@@ -4,6 +4,6 @@ provider:
   gateway: http://127.0.0.1:8080
 functions:
   idoim-follow:
-    lang: python3
+    lang: dockerfile
     handler: ./idoim-follow
     image: idoim-follow:latest

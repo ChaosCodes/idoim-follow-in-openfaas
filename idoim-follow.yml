@@ -3,7 +3,7 @@ provider:
   name: openfaas
   gateway: http://127.0.0.1:8080
 functions:
-  hello-python:
+  idoim-follow:
     lang: python
-    handler: ./hello-python
-    image: hello-python:latest
+    handler: ./idoim-follow
+    image: idoim-follow:latest

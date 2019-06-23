@@ -2,14 +2,13 @@ import json
 import random
 
 def handle(req):
-    with open('./idioms_dict.json', 'r') as f:
+    with open('./function/idioms_dict.json', 'r') as f:
         words = json.load(f)
     try:
-        print(f'req{req}')
-        return req
-        if w not in words[w[0]]:
+        req = str(req).strip()
+        if req not in words[req[0]]:
             return 'the idiom not exist'
-        next_words = words.get(w[-1], [])
+        next_words = words.get(req[-1], [])
         length = len(next_words)
         if length == 0:
             return "can't find the next idion"
